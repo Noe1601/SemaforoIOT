@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo IOT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Semaforo IOT</span>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Semaforo IOT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <form class="form-inline my-100 my-lg-50">
+
+            <button id="add" class="btn btn-outline-primary my-2 my-sm-0 boton" type="submit">Quiero cruzar!</button>
+        </form>
+        </div>
+    </nav>
+
+
+    <div class="contenedor">
+        <div class="circle red" color="red"></div>
+        <div class="circle yellow" color="yellow"></div>
+        <div class="circle green" color="green"></div>
+    </div>
+
+    <!-- <div class="boton">
+        <button class="btn btn-primary mt-5">Quiero cruzar</button>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start">
+
+        <div class="text-center p-3 text-white">
+            © 2021 Equipo 7
+
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAY50RpSJ90y2S49Ya_9R3DPLeFmYaYr40",
+            authDomain: "semaforo-e57e6.firebaseapp.com",
+            databaseURL: "https://semaforo-e57e6-default-rtdb.firebaseio.com",
+            projectId: "semaforo-e57e6",
+            storageBucket: "semaforo-e57e6.appspot.com",
+            messagingSenderId: "327775291401",
+            appId: "1:327775291401:web:71903330445e7e32b810d8",
+            measurementId: "G-HEBWQK733M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
